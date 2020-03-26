@@ -1,0 +1,149 @@
+body {
+  font-family: "Circular", -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+
+.title {
+  padding: 0px 80px;
+  margin: 0px 73.5px;
+}
+
+.title1 {
+  font-weight: bold;
+  font-size: 22px;
+  color: #222222;
+}
+
+.subtitle {
+  margin-top: 4px;
+  font-size: 16px;
+  color: #222222;
+  margin-bottom: 32px;
+}
+
+/* .roomlist {
+  display: grid;
+  grid-template-columns: 520.656px 520.656px 520.656px;
+  grid-template-rows: 318.438px 150px;
+  column-gap: 15px;
+  margin-bottom: 16px;
+  position: relative;
+} */
+
+.location1 {
+  margin-top: 3px;
+}
+
+.roomtitle {
+  margin-top: 10px;
+}
+
+.location2 {
+  padding-top: 100px;
+}
+
+.subimg1>img {
+  display: block;
+  margin: 0 auto;
+}
+
+.subimg2>img {
+  display: block;
+  margin: 0 auto;
+}
+
+.cozynum {
+  font-size: 12px;
+  color: #914669;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.info {
+  font-size: 14px;
+  color: #484848;
+  margin-bottom: 1px;
+}
+
+.country {
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+}
+
+p {
+  margin: 0px;
+  width: 450px;
+}
+
+.roomlist {
+  position: relative;
+}
+/* 사진 크기 지정 */
+.room {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  width: 520.656px;
+  height: 318.438px;
+}
+/* 사진 경로 */
+#room1 {
+  background-image: url(../img/sec5_1.jpg);
+}
+
+#room2 {
+  background-image: url(../img/sec5_2.jpg);
+}
+
+#room3 {
+  background-image: url(../img/sec5_3.jpg);
+}
+#room4 {
+  background-image: url(../img/sec5_4.jpg);
+}
+
+/* 버튼 꾸미기 */
+.my-slider >div {
+  width: 520.656px;
+  height: 390px;
+  border-radius: 5px;
+}
+
+.my-slider>div>img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.slider-item{
+  height: 1000px;
+  width: 500px;
+}
+.container{
+  position: relative;
+}
+.my-controls .next{
+  position: absolute;
+  top:52%;
+  right: 150px;
+  z-index: 2;
+  border: none;
+  background-color: rgba(255,255,255,0.6);
+  border-radius: 100%;
+  color: white;
+  width: 35px;
+  height: 35px;
+}
+.my-controls .prev{
+  position: absolute;
+  top:52%;
+  left:150px;
+  z-index: 2;
+  border: none;
+  background-color: rgba(255,255,255,0.6);
+  border-radius: 100%;
+  color: white;
+  width: 35px;
+  height: 35px;
+}

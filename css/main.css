@@ -1,3 +1,4 @@
+/* 배경 초기화 */
 *{
   box-sizing: border-box;
   margin: 0;
@@ -8,7 +9,7 @@ html,body { height: 100%;}
 body{  font-family: "Circular", "-apple-system", "BlinkMacSystemFont", "Roboto", Helvetica Neue, sans-serif;}
 .main-page{
   height: 100%;
-  background-image: url("./img/main.jpg");
+  background-image: url("../img/main.jpg");
   background-repeat: no repeat;
   background-size: cover;
   background-position: center;
@@ -41,6 +42,7 @@ a{
   color: #484848;
   font-weight: bold;
 }
+/* 코로나 창 */
 .corona {
   background-color: white;
   width: 441px;
@@ -59,6 +61,7 @@ a{
 .textup{
   padding: 30px 32px 24px;
 }
+/* 버튼 */
 h1 {
   font-size: 29.5px;
   color: #484848;
@@ -132,6 +135,8 @@ input[type="button"]{
   float: right;
   font-family: "Curclure";
 }
+/* 버튼 끝 */
+/* 코로나 내용 */
 .ycolor{
   width: 100%;
   height: 8px;
@@ -162,8 +167,8 @@ input[type="button"]{
   font-size: 14px;
   color: #222222;
 }
-.bottomcolor{
-}
+/* 코로나 내용 끝 */
+/* 메인 맨 아래 링크 */
 .bottomcolor a {
   font-size: 14px;
   font-weight: 600;
@@ -176,12 +181,14 @@ input[type="button"]{
 .bottomcolor a:hover{
   text-decoration: underline;
 }
+/* 메인 맨 아래 링크 끝*/
 .main-navi div{
   height: 80px;
 }
 .line:hover {
   border-bottom: 2px solid white;
 }
+/* 섹션사이 링크 모음 */
 .more{
   display: flex;
   justify-content:flex-start;
@@ -196,6 +203,8 @@ input[type="button"]{
   margin-top:5px;
   margin-bottom:20px;
 }
+/* 섹션사이 링크 모음 끝*/
+/* 마지막 리스트 */
 .footer1{
   margin: 0px 411.500px;
   padding: 48px 24px;
@@ -254,6 +263,8 @@ input[type="button"]{
   font-size: 12px;
   text-align: center;
 }
+/* 마지막 리스트 끝*/
+/* 리스트 창 위의 화살표 버튼 */
 .next{
   position: absolute;
   right: 150px;
@@ -296,3 +307,4 @@ input[type="button"]{
   background-color: white;
   padding: 2px 0 0 1px;
 }
+/* 리스트 창 위의 화살표 버튼 끝*/

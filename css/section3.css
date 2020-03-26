@@ -1,0 +1,66 @@
+body{
+  font-family: "Circular", -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+/* 타이틀 */
+.title{
+  padding: 0px 80px;
+  margin: 0px 73.5px;
+}
+.title1{
+  font-weight: bold;
+  font-size: 22px;
+  color: #222222;
+}
+.subtitle{
+  margin-top: 4px;
+  font-size: 16px;
+  color: #222222;
+  margin-bottom: 32px;
+}
+/* 타이틀 끝*/
+/* 사진 그리드6*1 */
+.roomlist{
+  display: grid;
+  grid-template-columns: 253.328px 253.328px 253.328px 253.328px 253.328px 253.328px;
+  grid-template-rows: 337.766px 150px ;
+  column-gap: 15px;
+  margin-bottom: 16px;
+}
+
+.room > img{
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+/* 사진끝 */
+/* 사진 설명 꾸미기 */
+.country{
+  color: #222222;
+  margin: 6px 0 6px 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+.info {
+  font-size: 16px;
+  color: #222222;
+  margin-bottom: 4px;
+}
+.price{
+  font-size: 16px;
+  color: #222222;
+  margin-bottom: 1px;
+}
+.point{
+  font-size: 14px;
+  color: #222222;
+  margin-left: 3px;
+}
+.num{
+  font-size: 14px;
+  color: #717171;
+}
+p{
+  margin: 0px;
+  width: 270px;
+}
+/* 사진 설명 꾸미기 끝 */

@@ -1,0 +1,68 @@
+body{
+  font-family: "Circular", -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+.title{
+  padding: 0px 80px;
+  margin: 0px 73.5px;
+}
+.title1{
+  font-weight: bold;
+  font-size: 22px;
+  color: #222222;
+}
+.subtitle{
+  margin-top: 4px;
+  font-size: 16px;
+  color: #222222;
+  margin-bottom: 32px;
+}
+.roomlist{
+  display: grid;
+  grid-template-columns: 388px 388px 388px 388px;
+  grid-template-rows: 258.66px 100px 258.66px 100px;
+  column-gap: 15px;
+  margin-bottom: 16px;
+}
+.room{
+}
+.room > img{
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+.location1{display: flex;
+  justify-content: flex-end;
+  margin-top: 12px;
+  margin-bottom: 6px;}
+.roomsuperhost{
+  border: 1px solid black;
+  width: 70px;
+  border-radius: 5px;
+  background-color:white;
+  color:black;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+}
+.roomname{
+  color: #717171;
+  padding-left: 5px;
+  font-size: 14px;
+}
+span{
+  color:#92174D;
+  padding-right: 5px;
+  padding-top: 0;
+}
+.title1 img:hover{
+  background-image: url(../img/arrow.svg);
+}
+.roomadress{
+  margin-bottom: 16px;
+}
+.roomadress{
+  overflow: hidden;
+  line-height: 20px;
+  text-overflow: ellipsis;
+  font-size: 16px;
+}
