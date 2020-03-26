@@ -133,23 +133,27 @@
     }
     .my-controls .next{
       position: absolute;
-      top:50%;
-      right: 130px;
+      top:52%;
+      right: 150px;
       z-index: 2;
       border: none;
-      background-color: rgba(0,0,0,0);
-      font-size: 1.5em;
-      color: grey;
+      background-color: rgba(255,255,255,0.6);
+      border-radius: 100%;
+      color: white;
+      width: 35px;
+      height: 35px;
     }
     .my-controls .prev{
       position: absolute;
-      top:50%;
-      left:130px;
+      top:52%;
+      left:150px;
       z-index: 2;
       border: none;
-      background-color: rgba(255,255,255,2);
-      font-size: 1.5em;
-      color: grey;
+      background-color: rgba(255,255,255,0.6);
+      border-radius: 100%;
+      color: white;
+      width: 35px;
+      height: 35px;
     }
   </style>
 </head>
@@ -157,8 +161,8 @@
 <body>
   <div class="container">
   <div class="my-controls" aria-label="Carousel Navigation" tabindex="0">
-    <button data-controls="prev" class="prev" tabindex="-1" aria-controls="tns1"><i class="fas fa-angle-left"></i></button>
-    <button data-controls="next" class="next" tabindex="-1" aria-controls="tns1"><i class="fas fa-angle-right"></i></button>
+    <button data-controls="prev" class="prev" tabindex="-1" aria-controls="tns1"><img src="./img/prev.svg" width="19px" height="19px" alt=""></button>
+    <button data-controls="next" class="next" tabindex="-1" aria-controls="tns1"><img src="./img/next.svg" width="19px" height="19px" alt=""></button>
   </div>
   <div class="title">
     <div class="title1">에어비앤비 플러스 추천 여행지<img width="18px" height="18px" onmouseover="this.src='./img/arrow.svg'" onmouseout="this.src='./img/button.PNG'" src="./img/button.PNG" alt=""> </div>
