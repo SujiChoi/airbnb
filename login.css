@@ -1,4 +1,5 @@
-* {box-sizing: border-box;}
+* {box-sizing: border-box;
+}
 
 /* 텍스트상자 */
 .text_input {
@@ -9,7 +10,6 @@ display: inline-block;
 border: none;
 background: #f1f1f1;
 }
-
 /* 버튼 스타일*/
 button {
 background-color: red;
@@ -79,7 +79,7 @@ left: 0;
 top: 0;
 width: 100%; /* 가로길이 */
 height: 100%; /* 세로높이 */
-overflow: auto; /* 필요하면 스크롤 가능 */
+overflow : hidden; /* 필요하면 스크롤 가능 */
 background-color: rgb(71,78,93,0.5);
 }
 

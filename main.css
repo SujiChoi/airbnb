@@ -196,12 +196,61 @@ input[type="button"]{
   margin-top:5px;
   margin-bottom:20px;
 }
-.footermain{
+.footer1{
   margin: 0px 411.500px;
   padding: 48px 24px;
   width: 1032px;
   height: 243px;
+}
+.footermain{
+  margin: 0 -8px;
+}
+.foot{
+  width: 262px;
+  height: 188px;
+  padding: 0 8px;
   display: inline-block;
 }
-.footermain>div{
-  height: 188px;
+
+.foottitle > span{
+  font-size: 14px;
+  color: #484848;
+  font-weight: bold;
+}
+.foot>div{
+  font-size: 14px;
+  color: #767676;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.footlist,.footlist1{
+  display: flex;
+  justify-content: flex-end;
+}
+.footerfinal1{
+  font-size: 14px;
+  color: #767676;
+  font-weight: 600;
+  margin-left: 8px;
+  margin-top: 3px;
+  display: flex;
+}
+.footlist1 > div{
+  padding: 0 8px;
+}
+.footerfinal2 > a {
+  font-size: 14px;
+  color: #767676;
+  font-weight: 600;
+  margin:0 4px;
+}
+.roomsuperhost{
+  border: 1px solid black;
+  width: 70px;
+  border-radius: 5px;
+  background-color:white;
+  color:black;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+}

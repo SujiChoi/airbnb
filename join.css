@@ -40,7 +40,7 @@ left: 0;
 top: 0;
 width: 100%; /* 가로길이 */
 height: 100%; /* 세로높이 */
-overflow: auto; /* 필요하면 스크롤 가능 */
+overflow: hidden; /* 필요하면 스크롤 가능 */
 background-color:rgb(71,78,93,0.5);
 }
 
@@ -56,6 +56,7 @@ padding: 32px;
 border: 1px solid #888;
 transform:translate(-50%,-50%);
 max-width: 900px;
+overflow: hidden;
 }
 
 a{
