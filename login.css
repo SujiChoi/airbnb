@@ -1,0 +1,120 @@
+* {box-sizing: border-box;}
+
+/* 텍스트상자 */
+.text_input {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: none;
+background: #f1f1f1;
+}
+
+/* 버튼 스타일*/
+button {
+background-color: red;
+color: white;
+padding: 14px 20px;
+margin: 6px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+}
+
+input[type="email"]{
+  width: 100%;
+  padding: 14px 20px;
+  margin: 6px 0;
+  border-radius:5px;
+  border: 1px solid #E4E4E4;
+  background-image : url('./img/emaillogin.svg');
+  background-size: 16px;
+  background-position:98%;
+  background-repeat:no-repeat;
+}
+
+
+input[type="password"]{
+  width: 100%;
+  padding: 14px 25px;
+  margin: 6px 0;
+  margin-bottom: 15px;
+  border-radius:5px;
+  border: 1px solid #E4E4E4;
+  background-image : url('./img/kaki.svg');
+  background-size: 16px;
+  background-position:98%;
+  background-repeat:no-repeat;
+}
+
+input[type="checkbox"] {
+border: 0.7px solid #484848;
+width: 20px;
+height: 20px;
+background: white;
+cursor: pointer;
+float: left;}
+
+.button > button , .or{
+  display: flex;
+  justify-content: center;
+}
+
+.passwordaline{
+  display: flex;
+  justify-content:flex-end;
+  margin-bottom: 10px;
+}
+.container {
+display: block;
+width: 504px;
+height: 259px;
+}
+
+/* 배경화면(로그인창 바깥) */
+.modal {
+display: none;
+position: fixed; /* 포지션 픽스 */
+left: 0;
+top: 0;
+width: 100%; /* 가로길이 */
+height: 100%; /* 세로높이 */
+overflow: auto; /* 필요하면 스크롤 가능 */
+background-color: rgb(71,78,93,0.5);
+}
+
+/* 로그인창 */
+.modal-content-login {
+background-color: #fefefe;
+position: absolute;
+top: 50%;
+left: 50%;
+width:568px;
+height: 567px;
+padding: 32px;
+transform:translate(-50%,-50%);
+max-width: 900px;
+opacity: 1;
+}
+
+.textfiled{
+  width: 504px;
+  height: 288px;
+}
+a{
+  text-decoration: none;
+}
+
+hr {
+border: 1px solid #f1f1f1;
+margin-bottom: 25px;
+}
+
+.loginBtn{
+  border-radius:5px;
+  font-size: 16px;
+  padding: 10px 22px;
+  width: 504px;
+  height: 48px;
+  font-weight: bold;
+}

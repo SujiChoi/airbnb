@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    html,body { height: 458px; width: 1900px;}
+    body{
+      font-family: "Circular", -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    }
+    .sec1{
+      margin: 0 auto;
+      width: 100%;
+    }
+    .sec1:before {
+        content: ""; display: inline-block;
+        width: 1px; height: 100%;
+        margin-right: 0; vertical-align: middle;
+    }
+    .sec2{
+      height: 378px;
+      width: 1600px;
+      display: inline-block;
+      vertical-align: middle;
+      align-items:center;
+      padding-left:151.5px;
+    }
+    .title{
+      font-weight: bold;
+      font-size: 22px;
+      color: #222222;
+    }
+    .subtitle{
+      margin-top: 4px;
+      font-size: 16px;
+      color: #222222;
+    }
+    .sec1sub{
+      width: 800px;
+      height: 78px;
+    }
+    .fig{
+      width: 1600px;
+      height: 300px;
+      background-image: url(./img/sec2-1.jpg);
+      background-repeat: no repeat;
+      background-size: cover;
+      background-position: center;
+      border-radius: 5px;
+    }
+    .fig > .subfig > img{
+      margin: 0 auto;
+      display: block;
+      padding: 56px 0 24px 0;
+    }
+    .subbutton{
+      width: 1600px;
+      height: 46px;
+    }
+    .subbutton > .button{
+      width: 133px;
+      height: 46px;
+      background-color: white;
+      border-radius: 5px;
+      margin: 0 auto;
+      padding: 6px 15px;
+      text-align: center;
+      display: flex;
+      justify-content:center;
+    }
+    span{
+      font-size: 10px;
+      color: #484848;}
+
+
+  </style>
+</head>
+<body>
+  <div class="sec1">
+  <div class="sec2">
+  <div class="sec1sub">
+    <div class="title">에어비앤비 플러스 숙소 <img width="18px" height = "18px" onmouseover="this.src='./img/arrow.svg'" onmouseout="this.src='./img/button.PNG'" src="./img/button.PNG" alt=""> </div>
+    <div class="subtitle">퀄리티와 인테리어 디자인이 검증된 숙소. </div>
+  </div>
+  <div class="fig">
+    <div class="subfig">
+      <img src="./img/plus.svg" alt="">
+    </div>
+    <div class="subbutton">
+      <div class="button">
+        <div class="but1" style="margin-top:2px">
+          <span>숙소 둘러보기</span>
+        </div>
+        <div class="but2">
+          <img src="./img/arrow_right.svg" style="margin:10px 7px" width="10px" height="10px" alt="">
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  </div>
+  </body>
+</html>

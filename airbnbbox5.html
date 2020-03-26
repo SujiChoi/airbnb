@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <style>
+    body {
+      font-family: "Circular", -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    }
+
+    .title {
+      padding: 0px 80px;
+      margin: 0px 73.5px;
+    }
+
+    .title1 {
+      font-weight: bold;
+      font-size: 22px;
+      color: #222222;
+    }
+
+    .subtitle {
+      margin-top: 4px;
+      font-size: 16px;
+      color: #222222;
+      margin-bottom: 32px;
+    }
+
+    /* .roomlist {
+      display: grid;
+      grid-template-columns: 520.656px 520.656px 520.656px;
+      grid-template-rows: 318.438px 150px;
+      column-gap: 15px;
+      margin-bottom: 16px;
+      position: relative;
+    } */
+
+    .location1 {
+      margin-top: 3px;
+    }
+
+    .roomtitle {
+      margin-top: 10px;
+    }
+
+    .location2 {
+      padding-top: 100px;
+    }
+
+    .subimg1>img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .subimg2>img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .cozynum {
+      font-size: 12px;
+      color: #914669;
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+
+    .info {
+      font-size: 14px;
+      color: #484848;
+      margin-bottom: 1px;
+    }
+
+    .country {
+      color: white;
+      font-size: 32px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    p {
+      margin: 0px;
+      width: 450px;
+    }
+
+    .roomlist {
+      position: relative;
+    }
+
+    .room {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border-radius: 5px;
+      width: 520.656px;
+      height: 318.438px;
+    }
+
+    #room1 {
+      background-image: url(./img/sec6_1.jpg);
+    }
+
+    #room2 {
+      background-image: url(./img/sec6_2.jpg);
+    }
+
+    #room3 {
+      background-image: url(./img/sec6_3.jpg);
+    }
+    #room4 {
+      background-image: url(./img/sec6_4.jpg);
+    }
+    .my-slider >div {
+      width: 520.656px;
+      height: 390px;
+      border-radius: 5px;
+    }
+
+    .my-slider>div>img {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+    }
+    .slider-item{
+      height: 1000px;
+      width: 500px;
+    }
+    .container{
+      position: relative;
+    }
+    .my-controls .next{
+      position: absolute;
+      top:50%;
+      right: 130px;
+      z-index: 2;
+      border: none;
+      background-color: rgba(0,0,0,0);
+      font-size: 1.5em;
+      color: grey;
+    }
+    .my-controls .prev{
+      position: absolute;
+      top:50%;
+      left:130px;
+      z-index: 2;
+      border: none;
+      background-color: rgba(255,255,255,2);
+      font-size: 1.5em;
+      color: grey;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+  <div class="my-controls" aria-label="Carousel Navigation" tabindex="0">
+    <button data-controls="prev" class="prev" tabindex="-1" aria-controls="tns1"><i class="fas fa-angle-left"></i></button>
+    <button data-controls="next" class="next" tabindex="-1" aria-controls="tns1"><i class="fas fa-angle-right"></i></button>
+  </div>
+  <div class="title">
+    <div class="title1">에어비앤비 플러스 추천 여행지<img width="18px" height="18px" onmouseover="this.src='./img/arrow.svg'" onmouseout="this.src='./img/button.PNG'" src="./img/button.PNG" alt=""> </div>
+    <div class="subtitle">내 집 같은 편안함 그 이상을 선사하는 아름다운 숙소를 찾아보세요.</div>
+
+    <div class="my-slider">
+        <div class="slider-item">
+            <div class="room" id="room1">
+              <div class="location2">
+                <div class="subimg1">
+                  <img src="./img/pluswhite.svg" width="71px" height="36px" alt="df">
+                </div>
+                <div class="country">
+                  토론토
+                </div>
+                <div class="subimg2">
+                  <img src="./img/secsub1.svg" width="77px" height="15px" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="roomtitle">
+              <div class="location1">
+                <div class="roomtext">
+                  <div class="cozynum">260개 이상의 검증된 숙소</div>
+                  <div class="info">
+                    <p>퀼리티와 편안함이 검증된 토론토 숙소에서 아름다운 전망과 에드워드 양식의 건축미를 감상해보세요.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="slider-item">
+            <div class="room" id="room2">
+              <div class="location2">
+                <div class="subimg1">
+                  <img src="./img/plus.svg" width="71px" height="36px" alt="df">
+                </div>
+                <div class="country" style="color: #3C3C41;">
+                  바르셀로나
+                </div>
+                <div class="subimg2">
+                  <img src="./img/secsub2.svg" width="128px" height="15px" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="roomtitle">
+              <div class="location1">
+                <div class="roomtext">
+                  <div class="cozynum">
+                    <p>230개 이상의 검증된 숙소</p>
+                  </div>
+                  <div class="info">
+                    <p>수없이 다양한 문화가 공존하는 도시에서 고딕 스타일의 아파트, 넓은 로프트 등 검증된 숙소를 만나보세요.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="slider-item">
+            <div class="room" id="room3">
+              <div class="location2">
+                <div class="subimg1">
+                  <img src="./img/pluswhite.svg" width="71px" height="36px" alt="df">
+                </div>
+                <div class="country">
+                  몬트리올
+                </div>
+                <div class="subimg2">
+                  <img src="./img/secsub3.svg" width="102.39px" height="15px" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="roomtitle">
+              <div class="location1">
+                <div class="roomtext">
+                  <div class="cozynum">
+                    <p>100개 이상의 검증된 숙소</p>
+                  </div>
+                  <div class="info">
+                    <p>고풍스러운 매력과 트렌트를 선도하는 요리가 공존하는 도시에서 필수 편의시설이 완비된 검증된 숙소를 만나보세요.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="slider-item">
+            <div class="room" id="room4">
+              <div class="location2">
+                <div class="subimg1">
+                  <img src="./img/plus.svg" width="71px" height="36px" alt="df">
+                </div>
+                <div class="country" style="color: #3C3C41;">
+                  센프란시스코
+                </div>
+                <div class="subimg2">
+                  <img src="./img/secsub4.svg" width="152px" height="15px" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="roomtitle">
+              <div class="location1">
+                <div class="roomtext">
+                  <div class="cozynum">
+                    <p>290개 이상의 검증된 숙소</p>
+                  </div>
+                  <div class="info">
+                    <p>다양한 문화와 독창적 감성으로 가득한 도시에서 빅토리아 양식의 주택, 소마(SoMa)의 로프트 등 검증된 숙소를 만나 보세요.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+  </div>
+  </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
+  <script>
+    var slider = tns({
+      container: '.my-slider',
+      items: 1,
+      responsive: {
+        640: {
+          edgePadding: 20,
+          gutter: 20,
+          items: 1
+        },
+        700: {
+          gutter: 30
+        },
+        900: {
+          items: 2
+        },
+        1500: {
+          items: 3
+        },
+      },
+      controlsContainer: ".my-controls",
+      nav:false
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<title>숙소, 트립, 장소를 모두 한 곳에</title>
+	<link rel="stylesheet" href="./main.css">
+	<link rel="stylesheet" href="./login.css">
+	<link rel="stylesheet" href="./join.css">
+
+</head>
+
+<body>
+	<header id="main-page" class="main-page">
+		<nav class="main-navi">
+			<div style="margin-right: auto;padding: 24px;"><img src="./img/airbnb_logo.svg" alt="로고" height="34px" width="34px"></div>
+
+			<div style="width:122.69px" class="line"><img src="./img/global.svg" alt="로고" height="12px" width="
+        12px"><a href="#"> 한국어 (KR)</a></div>
+
+			<div style="width:80.33px" class="line"><a href="#">₩ KRW</a></div>
+			<div style="width:104.98px" class="line"><a href="#">숙소 호스팅</a></div>
+			<div style="width:104.98px" class="line"><a href="#">체험 호스팅</a></div>
+			<div style="width:74px" class="line"><a href="#">도움말</a></div>
+			<div style="width:90.98px" class="line"><a onclick="openJoin();">회원 가입</a></div>
+			<div style="width:74px" class="line"><a onclick="openLogin();">로그인</a></div>
+		</nav>
+		<div class="main-text">
+			<div class="main-form">
+				<div style="font-size: 30px;">
+					<h1>
+						특색 있는 숙소와 즐길
+					</h1>
+					<h1>
+						거리를 예약하세요.
+					</h1>
+					<div class="subtext" style="margin-top:19px ;padding:0px;">
+						<div class="subtitle">목적지</div>
+						<input type="text" placeholder="모든 위치">
+						<div class="subtitle">
+							<pre>체크인                                     체크아웃</pre>
+						</div>
+						<div class="subtitle"></div>
+						<input type="date1" placeholder="년.월.일"><input type="date2" placeholder="년.월.일">
+						<div class="subtitle">인원</div>
+						<input type="datalist" placeholder="인원">
+						<div class="" style="padding:8px 0px 0px">
+							<input type="button" name="검색" value="검색">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="corona">
+				<div class="ycolor"></div>
+				<div class="coronasub">
+					<div class="fisrt">
+						우한 코로나 사태에 대한 에어비앤비의 대응
+					</div>
+					<div class="second">
+						에어비앤비는 2020년 3월 14일까지 예약을 마쳤으며 체크인 <br>날짜가 2020년 4월 14일 이전인 예약건에 대해, 게스트에게는 예약금 전액
+						환불을, 호스트에게 수수료 없는 취소 옵션을 <br> 제공하고 있습니다. 이 정책은 신규 예약에는 적용되지 <br>않습니다.
+					</div>
+					<div class="thrid">
+						<a href="#" style="color:#222222">자세히 알아보기</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="bottom-text">
+			<div class="bottomcolor">
+				<a href="#">오리건에 있는 300개 이상의 <br>독특한 숙소</div></a>
+		</div>
+	</header>
+	<!--첫 페이지 끝 -->
+
+	<!-- 회원가입 페이지 -->
+	<div id="join" class="modal">
+		<form class="modal-content-join">
+			<img onclick="closeJoin();" width="16px" height="16px" src="./img/close.svg" alt="">
+			<div class="container">
+				<nav class="button">
+					<button type="submit" class="joinBtn" style="background-color:#4568B2;margin-top:20px;">
+						<div><img style="margin-top:2px;margin-right:10px;" src="./img/facebook.svg" width="18px" height="18px" alt=""></div>
+						<div>페이스북 계정으로 로그인</div>
+					</button>
+				</nav>
+				<nav class="button">
+					<button type="submit" class="joinBtn" style="background-color:#FFFFFF;color:#484848;border:1px solid #484848">
+						<div><img style="margin-top:2px; margin-right:10px;" src="./img/google.svg" width="18px" height="18px" alt=""></div>
+						<div>구글 계정으로 로그인</div>
+					</button>
+				</nav>
+				<nav class="or" style="padding-top:10px;">
+					<div>
+						<hr width=220px align="center" style="margin-bottom:18px;">
+					</div>
+					<div style="padding-left:16px;padding-right:16px;font-size:14px;color:gray;font-weight:bold;">또는</div>
+					<div>
+						<hr width=220px align="right" style="margin-bottom:18px;">
+					</div>
+				</nav>
+				<nav class="button">
+					<button type="submit" class="joinBtn" style="background-color:#FF5A5F">
+						<div><img style="margin-top:4px;margin-right:10px;" src="./img/email.svg" width="18px" height="18px" alt=""></div>
+						<div>이메일로 회원 가입</div>
+					</button>
+				</nav>
+				<hr style="margin-bottom:18px;margin-top:18px;">
+				이미 에어비앤비 계정이 있나요? <a href="#" style="color:#008489;font-weight:bold;">로그인</a>
+			</div>
+		</form>
+	</div>
+	<!-- 회원가입 페이지 끝 -->
+
+	<!-- 로그인 페이지 -->
+	<div id="login" class="modal">
+		<form class="modal-content-login">
+			<img onclick="closeLogin();" width="16px" height="16px" src="./img/close.svg" alt="">
+			<div class="container">
+				<nav class="button">
+					<button type="submit" class="loginBtn" style="background-color:#4568B2;margin-top:20px;">
+						<div><img style="margin-top:2px;margin-right:10px;" src="./img/facebook.svg" width="18px" height="18px" alt=""></div>
+						<div>페이스북 계정으로 로그인</div>
+					</button>
+				</nav>
+				<nav class="button">
+					<button type="submit" class="loginBtn" style="background-color:#FFFFFF;color:#484848;border:1px solid #484848">
+						<div><img style="margin-top:2px; margin-right:10px;" src="./img/google.svg" width="18px" height="18px" alt=""></div>
+						<div>구글 계정으로 로그인</div>
+					</button>
+				</nav>
+
+				<div class="textfiled">
+					<nav class="or" style="padding-top:10px;">
+						<div>
+							<hr width=220px align="center" style="margin-bottom:18px;">
+						</div>
+						<div style="padding-left:16px;padding-right:16px;font-size:14px;color:gray;font-weight:bold;">또는</div>
+						<div>
+							<hr width=220px align="right" style="margin-bottom:18px;">
+						</div>
+					</nav>
+
+					<div><input type="email" style="padding-left:16px;padding-right:16px;font-size:16px;margin-right: auto" placeholder="이메일 주소"></div>
+
+
+					<input type="password" style="padding-left:16px;padding-right:16px;font-size:16px;" placeholder="비밀번호">
+
+					<div class="passwordaline">
+						<div style="margin-right: auto"><input id="check1" type="checkbox"><label for="check1"><span>비밀번호 저장</span></label></div>
+						<div style="color:#008489;font-size: 14px;">비밀번호 보기</div>
+					</div>
+
+					<div style="margin-bottom: 10px;"><a href="#" style="color:#008489;font-weight:bold;font-size: 14px;">전화번호로 로그인 · 비밀번호가 생각나지 않으세요?
+							　</a></div>
+
+					<nav class="button">
+						<button type="submit" class="loginBtn" style="background-color:#FF5A5F">
+							<div>로그인</div>
+						</button>
+					</nav>
+				</div>
+
+				<hr style="margin-bottom:18px;margin-top:18px;">
+				에어비앤비 계정이 없으세요? <a href="#" style="color:#008489;font-weight:bold;">회원 가입</a>
+			</div>
+		</form>
+	</div>
+	<!-- 로그인 페이지 끝-->
+
+	<!-- 섹션 1 시작 -->
+	<section>
+		<iframe src="./airbnbbox1.html" width="1900px" height="250px" scrolling="no" style="border:none;"></iframe>
+	</section>
+	<!-- 섹션 2 끝 -->
+
+	<!-- 섹션2 시작 -->
+	<section>
+		<iframe src="./airbnbbox2.html" width="1900px" height="460px" style="border:none;"></iframe>
+
+	</section>
+	<!-- 섹션2 끝 -->
+	<!-- 섹션3 시작 -->
+	<section>
+		<iframe src="./airbnbbox3.html" width="100%" height="590px" scrolling="no" style="border:none;"></iframe>
+	</section>
+	<!-- 섹션3 끝 -->
+	<div class="more">
+	<div class="more1">
+		어드벤처 모두 보기
+	</div>
+	<div class="more2">
+		<img src="./img/arrow_right.svg" style="margin:10px 7px" width="13px" height="13px" alt="">
+	</div>
+	</div>
+	<!-- 섹션4 시작 -->
+	<section>
+		<iframe src="./airbnbbox4.html" width="100%" height="770px" scrolling="no" style="border:none;"></iframe>
+	</section>
+	<!-- 섹션4 끝 -->
+	<div class="more">
+	<div class="more1">
+		보기(2,000개 이상)
+	</div>
+	<div class="more2">
+		<img src="./img/arrow_right.svg" style="margin:10px 7px" width="13px" height="13px" alt="">
+	</div>
+	</div>
+	<!-- 섹션5 시작 -->
+	<section>
+		<iframe src="./airbnbbox5.html" width="100%" height="550px" style="border:none;"></iframe>
+	</section>
+	<!-- 섹션5 끝 -->
+	<div class="more">
+	<div class="more1">
+		에어비앤비 플러스 서비스 지역 더 보기
+	</div>
+	<div class="more2">
+		<img src="./img/arrow_right.svg" style="margin:10px 7px" width="13px" height="13px" alt="">
+	</div>
+	</div>
+	<!-- 섹션6 시작 -->
+	<section>
+		<iframe src="./airbnbbox6.html" width="100%" height="850px" style="border:none;"></iframe>
+	</section>
+	<!-- 섹션6 끝 -->
+	<div class="more">
+	<div class="more1">
+		보기(2,000개 이상)
+	</div>
+	<div class="more2">
+		<img src="./img/arrow_right.svg" style="margin:10px 7px" width="13px" height="13px" alt="">
+	</div>
+	</div>
+	<!-- 섹션7 시작 -->
+	<section>
+		<iframe src="./airbnbbox7.html" width="100%" height="590px" style="border:none;" ></iframe>
+	</section>
+	<!-- 섹션7 끝 -->
+
+	<hr style="margin:0px">
+	<footer>
+		<div class="footermain" style="width: 1080px; height: 339px;">
+			<div class="foot1">
+				<span>에어비앤비</span>
+				<p>채용정보 <br>
+						뉴스<br>
+						정책<br>
+						다양성과 소속감<br>
+						접근성</p>
+			</div>
+			<div class="foot2">
+				<span>에어비앤비</span>
+				<p>채용정보 <br>
+						뉴스<br>
+						정책<br>
+						다양성과 소속감<br>
+						접근성</p>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		var login = document.getElementById('login');
+		var join = document.getElementById('join');
+
+		function openJoin() {
+			join.style.display = 'block';
+		}
+
+		function openLogin() {
+			login.style.display = 'block';
+		}
+
+		function closeJoin() {
+			join.style.display = 'none';
+		}
+
+		function closeLogin() {
+			login.style.display = 'none';
+		}
+		// 로그인 화면 바깥의 영역을 클릭할 경우 로그인 창 닫기
+		window.onclick = function(event) {
+			if (event.target == login || event.target == join) {
+				login.style.display = "none";
+				join.style.display = "none";
+			}
+		}
+	</script>
+
+</body>
+
+</html>

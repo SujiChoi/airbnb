@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #bgimg {
+        height: 100%;
+        background-image: url(img/1.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      #tops {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        position: absolute;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        top: 0;
+        left: 0;
+        z-index: 2;
+      }
+      #abbtn {
+        padding: 24px;
+      }
+      #topblank {
+        width: 80%;
+      }
+      #topnav {
+        display: flex;
+        width: 45%;
+      }
+      .navpanel {
+        text-align: center;
+        padding: 0 8px;
+        width: 50px;
+        cursor: pointer;
+      }
+      .navpanellong {
+        text-align: center;
+        width: 100px;
+        padding: 0 8px;
+        cursor: pointer;
+      }
+      .navpanelmid {
+        width: 70px;
+        padding: 0 8px;
+        text-align: center;
+        cursor: pointer;
+      }
+      .inpanel {
+        padding: 30px 0;
+      }
+      .inpaneleng {
+        padding: 32px 0;
+      }
+      .inpanel:hover {
+        border-bottom: 3px solid white;
+      }
+      .inpaneleng:hover {
+        border-bottom: 3px solid white;
+      }
+      #midpanel {
+        width: 100%;
+        height: 688px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        padding: 0 5.3%;
+        margin-top: 40px;
+      }
+
+      #simplesearch {
+        background: white;
+        width: 376px;
+        height: 422px;
+        padding: 29px 32px 24px;
+        border-radius: 5px;
+      }
+      h1 {
+        font-size: 29.5px;
+        color: #484848;
+        margin-top: 0;
+        margin-bottom: -3px;
+      }
+      #dest {
+        margin-top: 20px;
+      }
+      #dest > span {
+        font-size: 12px;
+        font-weight: 800;
+      }
+      #modenwitch {
+        margin-top: 8px;
+        height: 22px;
+        width: 93%;
+        border-radius: 5pt;
+        border: 1px solid #eeeeee;
+        padding: 12px 12px;
+      }
+      #modenwitch > input {
+        width: 100%;
+        height: 20px;
+        border: none;
+        font-size: 17px;
+        color: #888888;
+      }
+      #checkinout {
+        width: 100%;
+        font-size: 12px;
+        font-weight: 800;
+        margin-top: 16px;
+        margin-bottom: 8px;
+        display: flex;
+      }
+      .checkinout {
+        width: 50%;
+      }
+      #checkinoutbox {
+        width: 100%;
+        height: 48px;
+        display: flex;
+        margin-bottom: 20px;
+      }
+      .checkinoutbox {
+        width: 50%;
+        height: 22px;
+        border: 1px solid #eeeeee;
+        padding: 12px 12px;
+      }
+      .checkinoutbox > input {
+        width: 100%;
+        height: 20px;
+        border: none;
+        font-size: 15.5px;
+        color: #888888;
+      }
+      label {
+        font-size: 12px;
+        font-weight: 800;
+      }
+      #peoples {
+        margin-top: 8px;
+        height: 22px;
+        width: 93%;
+        border-radius: 5pt;
+        border: 1px solid #eeeeee;
+        padding: 12px 12px;
+        display: flex;
+        cursor: pointer;
+        justify-content: space-between;
+      }
+      .pleft > span {
+        font-size: 17px;
+        color: #888888;
+      }
+      #searchbutton {
+        margin-top: 25px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .searchbutton {
+        background-color: #ff5a5f;
+        color: white;
+        padding: 9px 22px;
+        width: 80px;
+        height: 48px;
+        border: none;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 5px;
+      }
+      #bottompanel {
+        width: 441px;
+        height: 196px;
+        background: white;
+        margin-top: 20px;
+        border-radius: 10px;
+      }
+      #toplane {
+        width: 100%;
+        height: 7px;
+        border-radius: 10px;
+        background-color: orange;
+      }
+      #bottompan {
+        width: 100%;
+        padding: 16px 24px;
+      }
+      p {
+        font-size: 13.7px;
+        color: #777777;
+      }
+      .fakeh3 {
+        font-size: 15.5px;
+        font-weight: bold;
+        margin-bottom: -7px;
+      }
+      .fakeh4 {
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      #bottoms {
+        position: absolute;
+        width: 222px;
+        height: 92px;
+        left: 86%;
+        top: 90%;
+        padding: 24px;
+      }
+      #bottompad {
+        width: 100%;
+        text-align: right;
+        font-size: 14px;
+        color: white;
+        font-weight: 600;
+      }
+      #bottompad > span:hover {
+        border-bottom: 1px solid white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bgimg"></div>
+    <div id="tops">
+      <div id="abbtn">
+        <img src="img/airbnb.svg" width="34px;" />
+      </div>
+      <div id="topblank"></div>
+      <div id="topnav">
+        <div class="navpanellong">
+          <div class="inpanel">
+            <img src="img/world.svg" />
+            &nbsp;한국어 (KR)
+          </div>
+        </div>
+        <div class="navpanel">
+          <div class="inpaneleng">
+            KRW
+          </div>
+        </div>
+        <div class="navpanellong">
+          <div class="inpanel">
+            숙소 호스팅
+          </div>
+        </div>
+        <div class="navpanellong">
+          <div class="inpanel">
+            체험 호스팅
+          </div>
+        </div>
+        <div class="navpanel">
+          <div class="inpanel">
+            도움말
+          </div>
+        </div>
+        <div class="navpanelmid">
+          <div class="inpanel">
+            회원 가입
+          </div>
+        </div>
+        <div class="navpanel">
+          <div class="inpanel">
+            로그인
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="midpanel">
+      <div id="simplesearch">
+        <h1>
+          특색 있는 숙소와 즐길
+        </h1>
+        <h1>
+          거리를 예약하세요.
+        </h1>
+        <form class="searchform">
+          <div id="dest">
+            <span>목적지</span>
+          </div>
+          <div id="modenwitch">
+            <input type="text" placeholder="모든 위치" />
+          </div>
+          <div id="checkinout">
+            <div class="checkinout">
+              체크인
+            </div>
+            <div class="checkinout">
+              체크아웃
+            </div>
+          </div>
+          <div id="checkinoutbox">
+            <div class="checkinoutbox">
+              <input type="text" placeholder="년. 월. 일" />
+            </div>
+            <div class="checkinoutbox">
+              <input type="text" placeholder="년. 월. 일" />
+            </div>
+          </div>
+          <label>
+            인원
+          </label>
+          <div id="peoples">
+            <div class="pleft"><span>인원</span></div>
+            <div class="pright">
+              <img src="img/hwasal.png" width="17px" />
+            </div>
+          </div>
+          <div id="searchbutton">
+            <button class="searchbutton">검색</button>
+          </div>
+        </form>
+      </div>
+      <div id="bottompanel">
+        <div id="toplane"></div>
+        <div id="bottompan">
+          <div class="fakeh3">
+            코로나19 사태에 대한 에어비앤비의 대응
+          </div>
+          <p>
+            에어비앤비는 2020년 3월 14일까지 예약을 마쳤으며 체크인<br />
+            날짜가 2020년 4월 14일 이전인 예약건에 대해, 게스트에게는<br />
+            예약금 전액 환불을, 호스트에게는 수수료 없는 취소 옵션을<br />
+            제공하고 있습니다. 이 정책은 신규 예약에는 적용되지<br />
+            않습니다.
+          </p>
+          <div class="fakeh4"><u>자세히 알아보기</u></div>
+        </div>
+      </div>
+    </div>
+    <div id="bottoms">
+      <div id="bottompad">
+        <span>오리건에 있는 300개 이상의<br />독특한 숙소</span>
+      </div>
+    </div>
+  </body>
+</html>

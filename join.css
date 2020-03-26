@@ -1,0 +1,77 @@
+* {box-sizing: border-box;}
+
+/* 텍스트상자 */
+.text_input {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: none;
+background: #f1f1f1;
+}
+
+/* 버튼 스타일*/
+button {
+background-color: red;
+color: white;
+padding: 14px 20px;
+margin: 6px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+}
+
+.button > button , .or{
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+display: block;
+width: 504px;
+height: 259px;
+}
+
+/* 배경화면(로그인창 바깥) */
+.modal1 {
+display: none; /* 기본 안보이도록 */
+position: fixed; /* 포지션 픽스 */
+left: 0;
+top: 0;
+width: 100%; /* 가로길이 */
+height: 100%; /* 세로높이 */
+overflow: auto; /* 필요하면 스크롤 가능 */
+background-color:rgb(71,78,93,0.5);
+}
+
+/* 회원가입 */
+.modal-content-join{
+background-color: #fefefe;
+position: absolute;
+top: 50%;
+left: 50%;
+width:568px;
+height: 363px;
+padding: 32px;
+border: 1px solid #888;
+transform:translate(-50%,-50%);
+max-width: 900px;
+}
+
+a{
+  text-decoration: none;
+}
+
+hr {
+border: 1px solid #f1f1f1;
+margin-bottom: 25px;
+}
+
+.joinBtn{
+  border-radius:5px;
+  font-size: 16px;
+  padding: 10px 22px;
+  width: 504px;
+  height: 48px;
+  font-weight: bold;
+}

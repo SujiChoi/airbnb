@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      font-family: "Circular", -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    }
+    .title{
+      padding: 0px 80px;
+      margin: 0px 73.5px;
+    }
+    .title1{
+      font-weight: bold;
+      font-size: 22px;
+      color: #222222;
+      height: 50px;
+    }
+    .roomlist{
+      display: grid;
+      grid-template-columns: 388px 388px 388px 388px;
+      grid-template-rows: 258.66px 100px 258.66px 100px;
+      column-gap: 15px;
+      margin-bottom: 16px;
+    }
+    .room{
+    }
+    .room > img{
+      height: 100%;
+      width: 100%;
+      border-radius: 5px;
+    }
+    .location1{display: flex;
+      justify-content: flex-end;
+      margin-top: 12px;
+      margin-bottom: 6px;}
+    .roomsuperhost{
+      border: 1px solid black;
+      width: 70px;
+      border-radius: 5px;
+      background-color:white;
+      color:black;
+      font-weight: bold;
+      font-size: 12px;
+      text-align: center;
+    }
+    .roomname{
+      color: #717171;
+      padding-left: 5px;
+      font-size: 14px;
+    }
+    span{
+      color:#92174D; 
+      padding-right: 5px;
+      padding-top: 0;
+    }
+    .title1 img:hover{
+      background-image: url(./img/arrow.svg);
+    }
+    .roomadress{
+      margin-bottom: 16px;
+    }
+    .roomadress{
+      overflow: hidden;
+      line-height: 20px;
+      text-overflow: ellipsis;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="title">
+  <div class="title1">전 세계 숙소 <img width="18px" height = "18px" onmouseover="this.src='./img/arrow.svg'" onmouseout="this.src='./img/button.PNG'" src="./img/button.PNG" alt=""> </div>
+  <div class="roomlist">
+    <div class="room"><img src="./img/r1.jpg" alt=""></div> 
+    <div class="room"><img src="./img/r2.jpg" alt=""></div> 
+    <div class="room"><img src="./img/r3.jpg" alt=""></div> 
+    <div class="room"><img src="./img/r4.jpg" alt=""></div>
+      <div class="roomtitle">
+        <div class = "location1">
+          <div class="roomtext " style="display: flex;margin-right: auto">
+            <div class="roomsuperhost" style="background-color: #92174D;color: white; border:#92174D; width: 40px; padding-top: 2px;">PLUS</div>
+            <div class="roomname">인도네시아 </div>
+        </div>
+        <div class = "location2" style="display: flex;">
+          <div><span>&bigstar;</span></div>
+          <div>4.90</div>
+        </div>
+      </div>      
+      <div class="roomadress">Dutch Architecture Villa with Private Pool</div>
+      </div>
+
+      <div class="roomtitle">
+        <div class = "location1">
+          <div class="roomtext " style="display: flex;margin-right: auto">
+          <div class="roomsuperhost">슈퍼호스트</div>
+            <div class="roomname">포트투칼</div>
+          </div>
+          <div class = "location2" style="display: flex;">
+          <div><span style="color:#FF385C; padding-right: 5px;">&starf;</span></div>
+          <div>4.90</div>
+        </div>
+        </div>      
+      <div class="roomadress">Douro Villa with swimming pool, Penafiel, Portugal</div>
+      </div>
+    
+      <div class="roomtitle">
+        <div class = "location1">
+          <div class="roomtext " style="display: flex;margin-right: auto">
+          <div class="roomsuperhost">슈퍼호스트</div>
+            <div class="roomname">아이슬란드</div>
+          </div>
+          <div class = "location2" style="display: flex;">
+          <div><span style="color:#FF385C; padding-right: 5px;">&starf;</span></div>
+          <div>4.76</div>
+        </div>
+        </div>      
+      <div class="roomadress">A BEAUTIFUL LUXURY VILLA IN NORTH ICELAND</div>
+      </div>
+      <div class="roomtitle">
+        <div class = "location1">
+          <div class="roomtext " style="display: flex;margin-right: auto">
+          <div class="roomsuperhost">슈퍼호스트</div>
+            <div class="roomname">일본</div>
+          </div>
+          <div class = "location2" style="display: flex;">
+          <div><span style="color:#FF385C; padding-right: 5px;">&starf;</span></div>
+          <div>4.94</div>
+        </div>
+        </div> 
+      <div class="roomadress">Sanson Terrace "off-grid tiny cottage"</div>
+      </div>
+    <div class="room"><img src="./img/r5.jpg" alt=""></div> 
+    <div class="room"><img src="./img/r6.jpg" alt=""></div> 
+    <div class="room"><img src="./img/r7.jpg" alt=""></div> 
+    <div class="room"><img src="./img/r8.jpg" alt=""></div>
+    <div class="roomtitle">
+      <div class = "location1">
+        <div class="roomtext " style="display: flex;margin-right: auto">
+        <div class="roomsuperhost">슈퍼호스트</div>
+          <div class="roomname">아이슬란드</div>
+        </div>
+        <div class = "location2" style="display: flex;">
+        <div><span style="color:#FF385C; padding-right: 5px;">&starf;</span></div>
+        <div>4.76</div>
+      </div>
+      </div> 
+    <div class="roomadress">Amazing view - Moderne apartment</div>
+    </div>
+    <div class="roomtitle">
+      <div class = "location1">
+        <div class="roomtext " style="display: flex;margin-right: auto">
+        <div class="roomsuperhost">슈퍼호스트</div>
+          <div class="roomname">프랑스</div>
+        </div>
+        <div class = "location2" style="display: flex;">
+        <div><span style="color:#FF385C; padding-right: 5px;">&starf;</span></div>
+        <div>4.90</div>
+      </div>
+      </div> 
+    <div class="roomadress">Superb duplex apartment in the historical centre</div>
+    </div>
+    <div class="roomtitle">
+      <div class = "location1">
+        <div class="roomtext " style="display: flex;margin-right: auto">
+        <div class="roomsuperhost">슈퍼호스트</div>
+          <div class="roomname">크로아티아</div>
+        </div>
+        <div class = "location2" style="display: flex;">
+        <div><span style="color:#FF385C; padding-right: 5px;">&starf;</span></div>
+        <div>4.78</div>
+      </div>
+      </div> 
+    <div class="roomadress">The best position in Hvar!</div>
+    </div>
+
+    <div class="roomtitle">
+      <div class = "location1">
+        <div class="roomtext " style="display: flex;margin-right: auto">
+        <div class="roomsuperhost">슈퍼호스트</div>
+          <div class="roomname">그리스</div>
+        </div>
+        <div class = "location2" style="display: flex;">
+        <div><span style="color:#FF385C; padding-right: 5px;">&starf;</span></div>
+        <div>4.95</div>
+      </div>
+      </div> 
+    <div class="roomadress">Hector Cave House</div>
+    </div>
+
+
+
+  </div>
+</div>
+</div>
+</html>

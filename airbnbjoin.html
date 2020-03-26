@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {box-sizing: border-box;}
+
+    /* 텍스트상자 */
+    .text_input {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    }
+
+    /* 버튼 스타일*/
+    button {
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    margin: 6px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    }
+
+    .button > button , .or{
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+    display: block;
+    width: 504px;
+    height: 259px;
+    }
+
+    /* 배경화면(로그인창 바깥) */
+    .modal {
+    //display: none; /* 기본 안보이도록 */
+    position: fixed; /* 포지션 픽스 */
+    left: 0;
+    top: 0;
+    width: 100%; /* 가로길이 */
+    height: 100%; /* 세로높이 */
+    overflow: auto; /* 필요하면 스크롤 가능 */
+    background-color:rgb(71,78,93,0.5);
+    }
+
+    /* 회원가입 */
+    .modal-content-join {
+    background-color: #fefefe;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width:568px;
+    height: 363px;
+    padding: 32px;
+    border: 1px solid #888;
+    transform:translate(-50%,-50%);
+    max-width: 900px;
+    }
+
+    a{
+      text-decoration: none;
+    }
+
+    hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+    }
+
+    .joinBtn{
+      border-radius:5px;
+      font-size: 16px;
+      padding: 10px 22px;
+      width: 504px;
+      height: 48px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- <h2>로그인 폼</h2>
+  <button onclick="openLogin();" style="width:auto;">로그인</button> -->
+
+  <!-- 로그인 폼 시작 -->
+  <!-- id="login" -->
+  <div class="modal">
+      <form class="modal-content-join">
+              <img onclick="closeJoin();"width="16px" height="16px" src="./img/close.svg" alt="">
+              <div class="container">
+              <nav class="button">
+                  <button type="submit" class="joinBtn" style="background-color:#4568B2;margin-top:20px;">
+                  <div><img style="margin-top:2px;margin-right:10px;" src="./img/facebook.svg" width="18px" height="18px" alt=""></div>
+                  <div>페이스북 계정으로 로그인</div></button>
+              </nav>
+              <nav class="button">
+                  <button type="submit" class="joinBtn" style="background-color:#FFFFFF;color:#484848;border:1px solid #484848">
+                  <div><img style="margin-top:2px; margin-right:10px;"src="./img/google.svg" width="18px" height="18px" alt=""></div>
+                  <div>구글 계정으로 로그인</div></button>
+              </nav>
+              <nav class="or" style="padding-top:10px;">
+                <div><hr width=220px align="center" style="margin-bottom:18px;" ></div>
+                <div style="padding-left:16px;padding-right:16px;font-size:14px;color:gray;font-weight:bold;">또는</div>
+                <div><hr width=220px align="right" style="margin-bottom:18px;"></div>
+              </nav>
+              <nav class="button">
+                  <button type="submit" class="joinBtn" style="background-color:#FF5A5F">
+                  <div><img style="margin-top:4px;margin-right:10px;" src="./img/email.svg" width="18px" height="18px" alt=""></div>
+                  <div>이메일로 회원 가입</div></button>
+              </nav>
+              <hr style="margin-bottom:18px;margin-top:18px;">
+              이미 에어비앤비 계정이 있나요? <a href="#" style="color:#008489;font-weight:bold;">로그인</a>
+          </div>
+      </form>
+  </div>
+  <!-- 로그인 폼 끝 -->
+
+  <script>
+  var login = document.getElementById('login');
+  function openLogin(){
+      login.style.display='block';
+  }
+  function closeLogin(){
+      login.style.display='none';
+  }
+  // 로그인 화면 바깥의 영역을 클릭할 경우 로그인 창 닫기
+  window.onclick = function(event) {
+      if (event.target == login) {
+          login.style.display = "none";
+      }
+  }
+  </script>
+</body>
+</html>

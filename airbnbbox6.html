@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      font-family: "Circular", -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    }
+    .title{
+      padding: 0px 80px;
+      margin: 0px 73.5px;
+    }
+    .title1{
+      font-weight: bold;
+      font-size: 22px;
+      color: #222222;
+    }
+    .subtitle{
+      margin-top: 4px;
+      font-size: 16px;
+      color: #222222;
+      margin-bottom: 32px;
+    }
+    .roomlist{
+      display: grid;
+      grid-template-columns: 388px 388px 388px 388px;
+      grid-template-rows: 258.66px 100px 258.66px 100px;
+      column-gap: 15px;
+      margin-bottom: 16px;
+    }
+    .room{
+    }
+    .room > img{
+      height: 100%;
+      width: 100%;
+      border-radius: 5px;
+    }
+    .location1{display: flex;
+      justify-content: flex-end;
+      margin-top: 12px;
+      margin-bottom: 6px;}
+    .roomsuperhost{
+      border: 1px solid black;
+      width: 70px;
+      border-radius: 5px;
+      background-color:white;
+      color:black;
+      font-weight: bold;
+      font-size: 12px;
+      text-align: center;
+    }
+    .roomname{
+      color: #717171;
+      padding-left: 5px;
+      font-size: 14px;
+    }
+    span{
+      color:#92174D;
+      padding-right: 5px;
+      padding-top: 0;
+    }
+    .title1 img:hover{
+      background-image: url(./img/arrow.svg);
+    }
+    .roomadress{
+      margin-bottom: 16px;
+    }
+    .roomadress{
+      overflow: hidden;
+      line-height: 20px;
+      text-overflow: ellipsis;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="title">
+  <div class="title1">슈퍼호스트의 숙소<img width="18px" height = "18px" onmouseover="this.src='./img/arrow.svg'" onmouseout="this.src='./img/button.PNG'" src="./img/button.PNG" alt=""> </div>
+  <div class="subtitle">경험이 풍부한 호스트의 숙소에서 편안히 머물러보세요.</div>
+  <div class="roomlist">
+    <div class="room"><img src="./img/sec7_1.jpg" alt=""></div>
+    <div class="room"><img src="./img/sec7_2.jpg" alt=""></div>
+    <div class="room"><img src="./img/sec7_3.jpg" alt=""></div>
+    <div class="room"><img src="./img/sec7_4.jpg" alt=""></div>
+      <div class="roomtitle">
+        <div class = "location1">
+          <div class="roomtext " style="display: flex;margin-right: auto">
+            <div class="roomsuperhost">슈퍼호스트</div>
+            <div class="roomname">무헤레스 섬</div>
+        </div>
+        <div class = "location2" style="display: flex;">
+          <div><span>&bigstar;</span></div>
+          <div>4.75</div>
+        </div>
+      </div>
+      <div class="roomadress">The World Famous Seashell House ~ Casa Caracol</div>
+      </div>
+
+      <div class="roomtitle">
+        <div class = "location1">
+          <div class="roomtext " style="display: flex;margin-right: auto">
+          <div class="roomsuperhost">슈퍼호스트</div>
+            <div class="roomname">Selat</div>
+          </div>
+          <div class = "location2" style="display: flex;">
+          <div><span style="color:#FF385C; padding-right: 5px;">&starf;</span></div>
+          <div>4.82</div>
+        </div>
+        </div>
+      <div class="roomadress">HIDEOUT BALI - Eco Bamboo Home</div>
+      </div>
+
+      <div class="roomtitle">
+        <div class = "location1">
+          <div class="roomtext " style="display: flex;margin-right: auto">
+          <div class="roomsuperhost">슈퍼호스트</div>
+            <div class="roomname">아르메니아</div>
+          </div>
+          <div class = "location2" style="display: flex;">
+          <div><span style="color:#FF385C; padding-right: 5px;">&starf;</span></div>
+          <div>4.93</div>
+        </div>
+        </div>
+      <div class="roomadress">Romantic Cabana with view</div>
+      </div>
+      <div class="roomtitle">
+        <div class = "location1">
+          <div class="roomtext " style="display: flex;margin-right: auto">
+          <div class="roomsuperhost">슈퍼호스트</div>
+            <div class="roomname">조슈아 트리</div>
+          </div>
+          <div class = "location2" style="display: flex;">
+          <div><span style="color:#FF385C; padding-right: 5px;">&starf;</span></div>
+          <div>4.88</div>
+        </div>
+        </div>
+      <div class="roomadress">The Joshua Tree House</div>
+      </div>
+    <div class="room"><img src="./img/sec7_5.jpg" alt=""></div>
+    <div class="room"><img src="./img/sec7_6.jpg" alt=""></div>
+    <div class="room"><img src="./img/sec7_7.jpg" alt=""></div>
+    <div class="room"><img src="./img/sec7_8.jpg" alt=""></div>
+    <div class="roomtitle">
+      <div class = "location1">
+        <div class="roomtext " style="display: flex;margin-right: auto">
+        <div class="roomsuperhost">슈퍼호스트</div>
+          <div class="roomname">Aptos</div>
+        </div>
+        <div class = "location2" style="display: flex;">
+        <div><span style="color:#FF385C; padding-right: 5px;">&starf;</span></div>
+        <div>4.86</div>
+      </div>
+      </div>
+    <div class="roomadress">The Mushroom Dome Retreat & LAND of Paradise Suite</div>
+    </div>
+    <div class="roomtitle">
+      <div class = "location1">
+        <div class="roomtext " style="display: flex;margin-right: auto">
+        <div class="roomsuperhost">슈퍼호스트</div>
+          <div class="roomname">Orondo</div>
+        </div>
+        <div class = "location2" style="display: flex;">
+        <div><span style="color:#FF385C; padding-right: 5px;">&starf;</span></div>
+        <div>4.85</div>
+      </div>
+      </div>
+    <div class="roomadress">Underground Hygge</div>
+    </div>
+    <div class="roomtitle">
+      <div class = "location1">
+        <div class="roomtext " style="display: flex;margin-right: auto">
+        <div class="roomsuperhost">슈퍼호스트</div>
+          <div class="roomname">Kirkby Stephen</div>
+        </div>
+        <div class = "location2" style="display: flex;">
+        <div><span style="color:#FF385C; padding-right: 5px;">&starf;</span></div>
+        <div>4.96</div>
+      </div>
+      </div>
+    <div class="roomadress">Live in an historic English Castle!</div>
+    </div>
+
+    <div class="roomtitle">
+      <div class = "location1">
+        <div class="roomtext " style="display: flex;margin-right: auto">
+        <div class="roomsuperhost">슈퍼호스트</div>
+          <div class="roomname">Akureyri</div>
+        </div>
+        <div class = "location2" style="display: flex;">
+        <div><span style="color:#FF385C; padding-right: 5px;">&starf;</span></div>
+        <div>4.76</div>
+      </div>
+      </div>
+    <div class="roomadress">Amazing view - Moderne apartment</div>
+    </div>
+
+  </div>
+</div>
+</div>
+</html>
