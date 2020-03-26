@@ -90,18 +90,18 @@ p {
 }
 /* 사진 경로 */
 #room1 {
-  background-image: url(../img/sec5_1.jpg);
+  background-image: url(./img/sec5_1.jpg);
 }
 
 #room2 {
-  background-image: url(../img/sec5_2.jpg);
+  background-image: url(./img/sec5_2.jpg);
 }
 
 #room3 {
-  background-image: url(../img/sec5_3.jpg);
+  background-image: url(./img/sec5_3.jpg);
 }
 #room4 {
-  background-image: url(../img/sec5_4.jpg);
+  background-image: url(./img/sec5_4.jpg);
 }
 
 /* 버튼 꾸미기 */
