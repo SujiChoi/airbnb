@@ -3,3 +3,8 @@
 에어비엔비 메인화면 똑같이 만들어보기
 
 
+
+![에어비앤비](C:\Users\it\Pictures\Screenshots\에어비앤비.png)
+
+
+
