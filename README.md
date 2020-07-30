@@ -4,7 +4,7 @@
 
 
 
-![에어비앤비](C:\Users\it\Pictures\Screenshots\에어비앤비.png)
+![에어비앤비](C:/Users/it/Pictures/Screenshots/에어비앤비.png)
 
 
 
